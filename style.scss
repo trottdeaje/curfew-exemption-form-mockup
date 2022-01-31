@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+$fontHeader: 'Gill Sans MT','Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+$fontBody: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$boxShadow: 2px 0px 4px 0px hsla(0, 0%, 0%, 0.15);
+$defaultColor: #333333;
+$backgroundColor: #f5f5f5;
+$mwInput: 300px;
+// Source: https://www.joshwcomeau.com/css/custom-css-reset/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  font-family: $fontBody;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+  html {
+    background-color: $backgroundColor;
+  }
+html,
+body {
+  color: $defaultColor;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  hyphens: auto;
+  background-color:#fff;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+/*
+        10. Add hyphens to the end of text
+    */
+
+    .sr-only {
+      border: 0 !important;
+      clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+      -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;  /* 2 */
+      height: 1px !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      position: absolute !important;
+      width: 1px !important;
+      white-space: nowrap !important;            /* 3 */
+    }
+    
+    /*
+      Use in conjunction with .sr-only to only display content when it's focused.
+      @note Useful for skip links 
+      @see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+      @note Based on a HTML5 Boilerplate technique, included in Bootstrap
+      @note Fixed a bug with position: static on iOS 10.0.2 + VoiceOver
+        @author Sylvain Pigeard
+        @see https://github.com/twbs/bootstrap/issues/20732
+    */
+    .sr-only-focusable:focus,
+    .sr-only-focusable:active {
+      clip: auto !important;
+      -webkit-clip-path: none !important;
+        clip-path: none !important;
+      height: auto !important;
+      margin: auto !important;
+      overflow: visible !important;
+      width: auto !important;
+      white-space: normal !important;
+    }
+
+    .required {
+      color: hsl(0, 80%, 50%);
+    }
+p {
+  hyphens: auto;
+  margin-bottom: 0.5em;
+}
+#header-inner2 {padding: 1em 1.5em}
+h1 {
+  hyphens: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $fontHeader;
+}
+.mw{
+    max-width: 40em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+
+}
+
+.flex {
+    display: flex;
+  }
+.wrap {
+    flex-wrap: wrap;
+  }
+.nm {
+    margin: 0;
+}
+
+.info {
+  margin-bottom: 0.5em;
+  hyphens: none;
+}
+.ac {
+    align-items: center;
+}
+.full-width{
+    width: 40em;
+}
+header {
+  display: flex;
+  align-items: center;
+    box-shadow: $boxShadow;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.20);
+  h4 {
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: -0.2px;
+  }
+}
+.logo{
+  width: 2.5em;
+  margin-right: 1em;
+  transition: width 0.15s ease-in;
+}
+.logo2{
+  width: 2em;
+  margin-right: 1em;
+  transition: width 0.15s ease-in;
+}
+.container {
+  margin-top: 8em;
+}
+
+.form {
+  margin-top: 4em;
+}
+.title{
+  margin: 0.5em 0 0.5em 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  padding-bottom: 0.5em;
+}
+.title2{
+  margin: 0.5em 0 0.5em 0;
+  font-size: 2.5em;
+  line-height: 1.15em;
+}
+h2 {
+  margin:2em 0em 0.5em 0em;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+.heading-line {
+  border-bottom: 2px solid #474747;
+  padding-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+ol {
+  padding-left: 1em;
+}
+
+li {
+  margin-bottom: 1em;
+  border-bottom: 1px solid hsl(0deg, 0%, 82%);
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+.sub-header {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: 600;
+  padding: 0.5em 0em;
+}
+.item-text {
+  font-weight: normal;
+}
+.btn-container {
+  display: flex;
+  // flex-direction: row-reverse;
+  margin-top: 2.5em;
+}
+.btn-container2 {
+  margin-top: 2.5em;
+}
+button {
+  background-color: #1464B0;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  color: #fff;
+  border-radius: 3px;
+  &:hover {
+    background-color: hsl(212, 80%, 33%);
+  }
+}
+
+section {
+  margin: 1em 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  max-width: $mwInput;
+}
+
+input, textarea {
+  max-width: $mwInput;
+  box-shadow: inset 0px 2px 4px -1px hsla(0, 0%, 0%, 0.15);
+  border: 1px solid #333;
+  border-radius: 2px;
+  &:focus {
+  border: 2px solid hsl(209, 80%, 45%);
+  outline: none;
+  }
+}
+
+.bday-input {
+  margin: 0 0.5em;
+  input {
+    max-width: 100px;
+  }
+}
+
+footer {
+  background-color: $backgroundColor;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  p {
+    margin: 0;
+  }
+}
+
+#bday-day {
+  max-width: 65px;
+}
+#bday-month {
+  max-width: 65px;
+}
+#bday-year {
+  max-width: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .title {
+    font-size:2em;
+  }
+  .logo {
+    width:2.5em
+  }
+  .main {
+    margin-top: 5em
+  }
+  .mw {
+    padding: 1.5em
+  }
+  .header-inner {
+  padding: 1em 1.5em
+  }
+  .container {
+  margin-top: 6em;
+  }
+  .form {
+  margin-top: 4em;
+  }
+}
