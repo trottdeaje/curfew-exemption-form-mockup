@@ -5,6 +5,8 @@ $fontBody: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $boxShadow: 2px 0px 4px 0px hsla(0, 0%, 0%, 0.15);
 $defaultColor: #333333;
 $backgroundColor: #f5f5f5;
+$primaryColor: #1464B0;
+$secondaryColor: #115097;
 $mwInput: 300px;
 // Source: https://www.joshwcomeau.com/css/custom-css-reset/
 /*
@@ -246,7 +248,7 @@ li {
   margin-top: 2.5em;
 }
 button {
-  background-color: #1464B0;
+  background-color: $primaryColor;
   border: 1px solid #fff;
   border-radius: 3px;
   padding: 0.5em 1em;
@@ -256,7 +258,7 @@ button {
   color: #fff;
   border-radius: 3px;
   &:hover {
-    background-color: hsl(212, 80%, 33%);
+    background-color: $secondaryColor;
   }
 }
 
@@ -278,8 +280,8 @@ input, textarea {
   border: 1px solid #333;
   border-radius: 2px;
   &:focus {
-  border: 2px solid hsl(209, 80%, 45%);
-  outline: none;
+  outline: 3px solid $primaryColor;
+  outline-offset: 0;
   }
 }
 
