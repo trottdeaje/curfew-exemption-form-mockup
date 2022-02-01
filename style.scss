@@ -199,16 +199,15 @@ header {
 }
 .title{
   margin: 0.5em 0 0.5em 0;
-  border-bottom: 1px solid #ccc;
   font-size: 2.5em;
   line-height: 1.1em;
+}
+
+.underline {
   padding-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
 }
-.title2{
-  margin: 0.5em 0 0.5em 0;
-  font-size: 2.5em;
-  line-height: 1.15em;
-}
+
 h2 {
   margin:2em 0em 0.5em 0em;
   font-size: 1.5em;
@@ -249,7 +248,8 @@ li {
 }
 button {
   background-color: $primaryColor;
-  border: 1px solid #fff;
+  border: 0;
+  box-shadow: 0px 2px 4px 0px hsla(0, 0%, 0%, 0.2);
   border-radius: 3px;
   padding: 0.5em 1em;
   font-size: 1em;
@@ -280,7 +280,7 @@ input, textarea {
   border: 1px solid #333;
   border-radius: 2px;
   &:focus {
-  outline: 3px solid $primaryColor;
+  outline: 3px solid #2081cf;
   outline-offset: 0;
   }
 }
@@ -314,7 +314,7 @@ footer {
   html {
     font-size: 14px;
   }
-  .title {
+  .title{
     font-size:2em;
   }
   .logo {

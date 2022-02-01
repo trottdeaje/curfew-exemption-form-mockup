@@ -236,16 +236,13 @@ header h4 {
 
 .title {
   margin: 0.5em 0 0.5em 0;
-  border-bottom: 1px solid #ccc;
   font-size: 2.5em;
   line-height: 1.1em;
-  padding-bottom: 0.5em;
 }
 
-.title2 {
-  margin: 0.5em 0 0.5em 0;
-  font-size: 2.5em;
-  line-height: 1.15em;
+.underline {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
 }
 
 h2 {
@@ -296,7 +293,9 @@ li {
 
 button {
   background-color: #1464B0;
-  border: 1px solid #fff;
+  border: 0;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   padding: 0.5em 1em;
   font-size: 1em;
@@ -338,7 +337,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  outline: 3px solid #1464B0;
+  outline: 3px solid #2081cf;
   outline-offset: 0;
 }
 
