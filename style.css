@@ -230,6 +230,10 @@ header h4 {
   margin-top: 8em;
 }
 
+.go-back-btn {
+  color: #333333;
+}
+
 .form {
   margin-top: 4em;
 }
