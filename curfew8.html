@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curfew Exemption Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header role="banner">
+        <div id="header-inner2" class="mw flex ac header-inner">
+        <img id="logo" class="logo2" src="./bm-logo.svg" alt="Bermuda Government logo">
+        <h4>GOVERNMENT OF BERMUDA</h4>
+        </div>
+    </header>
+    <main class="mw wrapper">
+    <div class="container form">
+        <div><span style="font-size: 1.5em;">←</span> &nbsp;<a href="curfew7.html">Go back</a></div>
+        <h1 class="title">When do you want to start your exemption?</h1>
+        <p class="nm info">Enter the date and time that you want to start your curfew exemption.</p>
+        <div style="align-items: flex-end;" class="flex wrap">
+        <section class="linear-input">
+            <form class="form-group">
+                <label for="curfew-start">
+                    Day <span aria-hidden="true" class="required">*</span>
+                </label>
+                <input id="curfew-start" class="input-sz-1" type="text" required>
+            </form>
+        </section>
+        <span aria-hidden="true" class="spacer">-</span>
+        <section class="linear-input">
+            <form class="form-group">
+                <label for="bday-month">
+                    Month <span aria-hidden="true" class="required">*</span>
+                </label>
+                <input id="bday-month" class="input-sz-1" type="text" autocomplete="bday-month" required>
+            </form>
+        </section>
+        <span aria-hidden="true" class="spacer">-</span>
+        <section class="linear-input">
+            <form class="form-group">
+                <label for="bday-year">
+                    Year <span aria-hidden="true" class="required">*</span>
+                </label>
+                <input id="bday-year" class="input-sz-2" type="text" autocomplete="bday-year" required>
+            </form>
+        </section>
+        </div>
+    
+        <div style="align-items: flex-end;" class="flex wrap">
+            <section class="linear-input">
+                <form class="form-group">
+                    <label for="time-hour">
+                        Hour <span aria-hidden="true" class="required">*</span>
+                    </label>
+                    <select id="time-hour" class="input-sz-1" required>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </form>
+            </section>
+            <span aria-hidden="true" class="spacer">-</span>
+            <section class="linear-input">
+                <form class="form-group">
+                    <label for="time-min">
+                        Minute <span aria-hidden="true" class="required">*</span>
+                    </label>
+                    <select id="time-min" class="input-sz-1" required>
+                            <option value="00">00</option>
+                            <option value="05">05</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                </form>
+            </section>
+            <span aria-hidden="true" class="spacer">-</span>
+            <section class="linear-input">
+                <form class="form-group">
+                    <label for="bday-year">
+                        Period <span aria-hidden="true" class="required">*</span>
+                    </label>
+                    <select id="time-period" class="input-sz-1" required>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option></select>
+                </form>
+            </section>
+        </div>
+        <div class="btn-container"><a href="./curfew9.html"><button>Continue</button></a></div>
+</div>
+</main>
+    <footer role="contentinfo"><div class="mw flex"><p>© Copyright 2022 by Government of Bermuda</p></div></footer>
+    <script src="./script.js"></script>
+</body>
+</html>
